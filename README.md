@@ -18,11 +18,11 @@ Actions taken:
 
 ## To run as a container:
 1. > docker build -t github-webhook .
-2. > docker run -ditp 5000:5000 --name github-webhook \
-   > --restart=unless-stopped \
+2. > docker run -ditp 5000:5000 --name github-webhook \\
+   > --restart=unless-stopped \\
    > github-webhook
 
-Or run the container in something like (AWS fargate)[https://aws.amazon.com/fargate/].
+Or run the container in something like [AWS Fargate](https://aws.amazon.com/fargate/).
 
 #### TODO
 - Add error checking
