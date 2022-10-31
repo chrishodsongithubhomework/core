@@ -2,7 +2,9 @@
 This account hold the central code that oversees all repos
 
 ## EnsureSecurity App
-This app runs on a server and listens for incoming events.  presently, it only listens for the creation of new repos and takes actions to ensure they are secure.
+This app runs on a server and listens for incoming events.  Presently, it only listens for the creation of new repos and takes actions to ensure they are secure.
+
+After the code is running a webhook will need to be set up to send signals.  This can either be done via [Webhooks](https://docs.github.com/en/developers/webhooks-and-events/webhooks/about-webhooks) or via [GitHub Apps](https://docs.github.com/en/developers/apps/getting-started-with-apps/about-apps).  Either way, you will need to configure the webhook URL to be whereever you are running the webhook code.  You will also need to ensure repo creation signals are being sent
 
 The code is in two parts
 ### The listener
